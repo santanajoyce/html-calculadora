@@ -35,14 +35,25 @@
 
     </section>
     <section class="calculo-hora">
-    <h2>Quer saber quanto o seu trabalho custa por hora?</h2>
+        <!-- planejamento financeiro para o mês -->
+    <h2>Quer saber qual o valor da sua hora trabalhada por mês?</h2>
 
     <label for="dias-sem">Quantidade de dias trabalhados na semana</label>
     <input id="dias-sem" type="number" value="0"/>
 
-    <label for="dias-mes">Qual o seu ganho mensal?</label>
-    <input id="dias-mes" type="number" value="0"/>
+    <label for="horas-por-dia">Quantas horas você trabalha por dia?</label>
+    <input id="horas-por-dia" type="number" value="0" min="0" max="24"/> 
+
+    <label for="ganho-mensal">Qual o seu ganho total no mês?</label>
+    <input id="ganho-mensal" type="number" value="0"/>
+
+
+    <button onclick="calcularValorFreela()">Calcular</button>
+    <span id="resultado-mensal">R$0,00</span><small>/hora</small>
+
+
     </section>
+
 
     <footer>Feito por Joyce Santana <a href="https://www.linkedin.com/in/joycepatricia">LinkedIn</a></footer>
     <script src="script.js"></script>
