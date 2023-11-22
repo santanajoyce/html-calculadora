@@ -1,0 +1,208 @@
+/* Reset de estilos para remover margens e preenchimentos padrão */
+body, h1, h2, h3, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+   
+  }
+
+
+  body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: #333;
+  }
+
+
+  /* Estilo da barra de navegação nav */
+
+
+  nav{
+    background-color: rgb(148, 56, 178);
+    color: aliceblue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  nav ul{
+    list-style-type: none;
+    display: flex;
+  }
+
+
+  nav ul li {
+    margin-right: 20px;
+  }
+
+
+  nav a {
+    text-decoration: none;
+    color:white;
+  }
+
+
+  .logo{
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+
+/* Estilo do header - cabeçalho */
+
+
+header{
+    background-image: url('/imagens/banner3.png');
+    padding: 200px 0;
+    background-size: cover;
+    background-position: center;
+    /* text-align:bottom; */
+    /* text-align: center; */
+    /* display: flex;
+    flex-direction: column; */
+    position: relative;
+   
+   
+   
+}
+
+
+/* para inserir a fonte do banner ao final do header */
+
+
+.banner{
+    /* background-color: #d22799bc; */
+    position: absolute;
+    left: 35%; bottom: 5% ;
+    text-align: center;
+    font-weight: bold;
+    color:white;
+
+
+}
+
+
+.titulo{
+    padding-top: 40px;
+}
+
+
+/* Estilo conteúdo principal main */
+
+
+main{
+    padding:30px;
+}
+
+
+/* Estilos da seção de cálculo */
+
+
+.calculo-periodo{
+    margin-bottom: 40px;  /*distância entre uma div e outra*/
+    background-color: #f9e4d9;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.titulo-calc{
+    margin-bottom: 20px;
+}
+
+
+/* fieldset */
+.calc-periodo{
+    margin-top: 20px;
+    flex-basis: 50%;
+   
+}
+
+
+/* explicar melhor  rem*/
+fieldset{
+    margin:1.5rem 0 0 0;
+    border:none;
+}
+.secao-form{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+label {
+    flex-basis: 50%;
+    margin-right: 10px;
+    text-align: center;
+    text-size-adjust: auto;
+    border-color: aliceblue;
+    font-weight: bold;
+}
+
+
+input{
+    flex-basis: 50%;
+    width: calc(100%- 20px);
+    padding: 23px;
+    box-sizing: border-box;
+    border: none;
+
+
+}
+
+
+button{
+    background-color: rgb(148, 56, 178);
+    color: white;
+    padding: 15px;
+    border:none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+footer {
+    background-color: rgb(148, 56, 178);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+}
+
+
+footer a{
+    text-decoration: none;
+    color:white;
+   font-weight: bold;
+ 
+}
+
+
+/* alinhar duas divs */
+.secao-calculo{
+    display: inline-block;
+    width: 50%;
+
+
+}
+
+
+.resultado{
+    width: 50%;
+    padding-top: 150px; /* centraliza a letra, encontrar uma forma melhor */
+    float: right;
+    text-align:center;
+    font-size: 40px;
+    color:#615c5c;
+   
+
+
+}
