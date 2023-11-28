@@ -210,7 +210,7 @@ footer a{
 /* alinhar duas divs */
 .caixa{
     display: inline-block;
-    width: 50%;
-
+    width: 100%;
+    font-size: 25px;
 
 }
